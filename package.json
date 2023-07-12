@@ -5,7 +5,7 @@
   "description": "Simple React + Socket.io app",
   "main": "index.js",
   "scripts": {
-    "start": "concurrently --kill-others \"node server.js\" \"cd socket-client && npm start\"",
+    "start": "concurrently --kill-others \"node api/server.js\" \"cd socket-client && npm start\"",
     "first": "echo \"Installing server packages.. \n\" && npm install && cd socket-client && echo \"\nInstalling client packages..\n\" && npm install",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
